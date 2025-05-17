@@ -8,7 +8,7 @@
     apt:
       name: apache2
       state: present
-      when: ansible_os_family == 'amazon'
+      when: ansible_os_family=="Amazon"
   - name: tree 
     apt:
       name: tree
