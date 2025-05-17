@@ -1,0 +1,11 @@
+---
+- hosts: appserver
+  become: yes
+  tasks:
+  - name: ping
+    ping:
+  - name: install apache2
+    apt:
+      name: "{{mywebpackdebian}}"
+      state: present
+    when: ansible_os_family=="Debian"

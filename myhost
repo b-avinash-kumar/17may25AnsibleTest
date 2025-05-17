@@ -4,3 +4,7 @@
 [appserver]
 172.31.11.108
 172.31.11.107
+
+[appserver:vars]
+mywebpackdebian= apache2
+mywebpackredhat= httpd
