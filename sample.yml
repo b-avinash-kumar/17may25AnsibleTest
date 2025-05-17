@@ -12,11 +12,8 @@
   - name: install httpd
     yum:
       name: httpd
-      state: latest
+      state: present
     when: ansible_os_family=="Amazon"
-  - name: tree 
-    apt:
-      name: tree
-      state: absent
+  
    
 
