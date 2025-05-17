@@ -1,0 +1,10 @@
+---
+- hosts: webservers
+  become: yes
+  tasks: 
+  - name: pinging 123 ...
+    ping:
+  - name: uninstall apache2
+    apt:
+      name: apache2
+      state: absent
