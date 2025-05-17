@@ -8,7 +8,12 @@
     apt:
       name: apache2
       state: present
-      when: ansible_os_family=="Debian"
+    when: ansible_os_family=="Debian"
+  - name: install httpd
+    yum:
+      name: httpd
+      state: latest
+    when: ansible_os_family=="Amazon"
   - name: tree 
     apt:
       name: tree
