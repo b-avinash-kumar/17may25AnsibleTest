@@ -11,6 +11,6 @@
   - name: tree 
     apt:
       name: tree
-      state: present
+      state: absent
    
 
