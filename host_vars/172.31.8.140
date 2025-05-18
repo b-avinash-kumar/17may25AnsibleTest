@@ -1,2 +1,3 @@
 --- 
+installjavaamazon: java-21-amazon-corretto
 installjavaredhat: java-21-openjdk 
