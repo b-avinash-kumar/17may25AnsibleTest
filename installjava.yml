@@ -1,0 +1,19 @@
+---
+- hosts: appservers
+  become: yes
+  tasks:
+  - name: pinging
+    ping: 
+  - name: install java on debian OS
+    apt:
+      name: "{{installjavadebian}}"
+      state: present 
+  - name: install java on amazon linux OS
+    yum:
+      name: "{{installjavaamazon}}"
+      state: present
+  - name: install java on redhat os
+    dnf:
+      name: "{{installjavaredhat}}"
+      state: present
+  
