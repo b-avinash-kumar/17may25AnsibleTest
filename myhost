@@ -8,6 +8,6 @@
 
 [appservers:vars]
 mywebpackdebian= apache2
-mywebpackredhat= httpd
+mywebpackredhat= httpdddd
 installjavadebian= openjdk-17-jdk
-installjavaamazon=  java-17-amazon-corretto-headless-17.0.15+6-1.amzn2023.1.x86_64
+installjavaamazon=  java-17-amazon-corretto

@@ -1,2 +1,2 @@
 --- 
-installjavaamazon: java-11-amazon-corretto
+installjavaamazon: java-11-amazon-corretto-headless-11.0.27+6-1.amzn2023.x86_64

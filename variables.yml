@@ -9,3 +9,8 @@
       name: "{{mywebpackdebian}}"
       state: present
     when: ansible_os_family=="Debian"
+  - name: install httpd
+    apt:
+      name: "{{mywebpackredhat}}"
+      state: present
+    when: ansible_os_family=="Amazon"
