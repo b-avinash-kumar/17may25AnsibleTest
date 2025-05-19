@@ -9,7 +9,7 @@
       name: "{{mywebpackdebian}}"
       state: present
     when: ansible_os_family=="Debian"
-  - name: install httpd
+  - name: install httpd webserver on amazon linux
     yum:
       name: "{{mywebpackredhat}}"
       state: present
