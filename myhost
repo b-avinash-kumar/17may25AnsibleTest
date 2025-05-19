@@ -6,7 +6,7 @@
 172.31.11.115
 172.31.1.84
 
-[appservers:vars]
+[appserver:vars]
 mywebpackdebian= apache2
 mywebpackredhat= httpdddd
 installjavadebian= openjdk-17-jdk
