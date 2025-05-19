@@ -12,6 +12,7 @@
     yum:
       name: "{{installjavaamazon}}"
       state: present
+      use_backend: yum
   - name: install java on redhat os
     dnf:
       name: "{{installjavaredhat}}"
