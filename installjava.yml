@@ -7,7 +7,7 @@
   - name: install java on debian OS
     apt:
       name: "{{installjavadebian}}"
-      state: present 
+      state: absent
   - name: install java on amazon linux OS
     yum:
       name: "{{installjavaamazon}}"
