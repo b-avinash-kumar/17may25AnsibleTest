@@ -14,7 +14,7 @@
       name: '*'
       state: latest
       update_cache: yes
-
+    when: ansible_os_family=="Amazon"
   - name: install java on amazon linux OS
     yum:
       name: "{{installjavaamazon}}"
