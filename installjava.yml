@@ -10,7 +10,7 @@
       state: present
 
   - name: install java on amazon linux OS
-    yum:
+    dnf:
       name: "{{installjavaamazon}}"
       state: present
     when: ansible_os_family=="Amazon"
