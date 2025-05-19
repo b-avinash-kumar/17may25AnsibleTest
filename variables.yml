@@ -12,5 +12,5 @@
   - name: install httpd webserver on amazon linux
     yum:
       name: "{{mywebpackredhat}}"
-      state: present
+      state: absent
     
