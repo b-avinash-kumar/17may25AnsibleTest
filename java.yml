@@ -4,8 +4,9 @@
   tasks:
   - name: ping
     ping:
-  - name: install java 17
+  - name: install java 11 on amazon linux server
     yum:
       name: "{{installjavaamazon}}"
-      state: removed
+      state: present
+
     
