@@ -1,2 +1,2 @@
 --- 
-installjavaamazon: java-21-amazon-corretto
+installjavaamazon: java-11-openjdk

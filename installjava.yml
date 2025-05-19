@@ -7,12 +7,14 @@
   - name: install java on debian OS
     apt:
       name: "{{installjavadebian}}"
-      state: absent
+      state: present
+
   - name: install java on amazon linux OS
     yum:
       name: "{{installjavaamazon}}"
       state: present
-      use_backend: yum
+    when: ansible_os_family=="Amazon"
+
   - name: install java on redhat os
     dnf:
       name: "{{installjavaredhat}}"
