@@ -10,4 +10,4 @@
 mywebpackdebian= apache2
 mywebpackredhat= httpd
 installjavadebian= openjdk-17-jdk
-installjavaamazon= openjdk17-openjdk-devel
+installjavaamazon= java-17-amazon-corretto
