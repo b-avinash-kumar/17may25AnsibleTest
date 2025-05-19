@@ -4,10 +4,12 @@
   tasks:
   - name: pinging
     ping: 
+    
   - name: install java on debian OS
     apt:
       name: "{{installjavadebian}}"
       state: present
+    when: ansible_os_family=="Debian"
 
   - name: upgrade packages amazon linux
     yum:
