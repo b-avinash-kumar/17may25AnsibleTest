@@ -1,0 +1,11 @@
+---
+- hosts: appservers
+  become: yes
+  tasks:
+  - name: ping
+    ping:
+  - name: install java 17
+    yum:
+      name: "{{installjavaamazon}}"
+      state: present
+    when: ansible_os_family== "Amazon"
