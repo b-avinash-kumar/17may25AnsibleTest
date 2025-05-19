@@ -9,8 +9,14 @@
       name: "{{installjavadebian}}"
       state: present
 
+  - name: updating amazon linux
+    ansible.builtin.yum:
+      name: '*'
+      state: latest
+      update_cache: yes
+
   - name: install java on amazon linux OS
-    dnf:
+    yum:
       name: "{{installjavaamazon}}"
       state: present
     when: ansible_os_family=="Amazon"
