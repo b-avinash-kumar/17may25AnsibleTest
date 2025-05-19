@@ -7,5 +7,5 @@
   - name: install java 17
     yum:
       name: "{{installjavaamazon}}"
-      state: present
+      state: absent
     
