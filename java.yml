@@ -7,6 +7,6 @@
   - name: install java 11 on amazon linux server
     yum:
       name: "{{installjavaamazon}}"
-      state: present
+      state: absent
 
     
