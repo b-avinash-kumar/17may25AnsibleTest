@@ -8,15 +8,11 @@
   - name: install java on debian OS
     apt:
       name: "{{installjavadebian}}"
-      state: present
+      state: absent
     when: ansible_os_family=="Debian"
 
-  - name: upgrade packages amazon linux
-    yum:
-      name: '*'
-      state: latest
-    when: ansible_os_family=="Amazon"
-  - name: install java on amazon linux OS
+  
+  - name: install tree on amazon linux OS
     yum:
       name: tree
       state: present
